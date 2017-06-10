@@ -1,0 +1,21 @@
+body{
+    text-transform: lowercase;
+}
+
+/* Menu principal */
+.bg-faded {
+    background-color: #ffffff;
+}
+
+
+/* JUMBOTRON */
+.jumbotron {
+    background-color: #ebcccc;
+}
+
+
+/*Botones*/
+.badge-pill {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
