@@ -11,14 +11,25 @@ $(document).ready(function () {
         var nombre = $('#nombre').val();
         var apellido = $('#apellido').val();
 
+        $.each($('#preferencias input[type="checkbox"]'),
+            function (index, elemento) {
+                if ($(elemento).is(':checked')) {
+                    alert($(elemento).val());
+                }
+        });
+
+
+
+
         var nuevaFila =
             '<li class="list-group-item">'
             + nombre + ' ' + apellido
             + '</li>';
 
-        $('#lista-usuarios').append(nuevaFila);
 
-        $('#myModal').modal('hide');
+        // $('#lista-usuarios').append(nuevaFila);
+
+        // $('#myModal').modal('hide');
     })
 
 });
